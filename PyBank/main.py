@@ -23,24 +23,17 @@ with open(path, 'r') as f:
 total_months = len(date)
 total_amount = sum(profit_loss)
 
-inc_profit = []
-dec_profit = []
-for n in profit_loss:
-    if n >= 0:
-        inc_profit.append(n)
-    else:
-        dec_profit.append(n)
+change_profit_loss = [profit_loss[i + 1] - profit_loss[i]
+                      for i in range(len(profit_loss)-1)]
 
-total_inc_profit = sum(inc_profit)
-total_dec_profit = sum(dec_profit)
+avg_profit_loss = (sum(change_profit_loss))/len(change_profit_loss)
 
-change_profit = (total_inc_profit-total_dec_profit)/total_months
+max_profit = max(change_profit_loss)
+min_profit = min(change_profit_loss)
 
-max_profit = max(inc_profit)
-min_profit = min(dec_profit)
 
 print(total_months)
 print(total_amount)
-print(change_profit)
+print(avg_profit_loss)
 print(max_profit)
 print(min_profit)
