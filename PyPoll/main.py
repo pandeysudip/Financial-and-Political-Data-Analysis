@@ -87,7 +87,14 @@ print(tooley_per)
 
 output_file = os.path.join("analysis", "pypoll.csv")
 with open(output_file, "w", newline='')as file:
-    writer = csv.writer(file)
-    writer.writerow(["title", "price", "subscriber_count",
-                     "number_of_reviews", "course_length"])
-    writer.writerows(cleaned_csv)
+    file.write("Election Results")
+    file.write("\n--------------------------------------")
+    file.write(f'\nTotal Votes: {total_vote}')
+    file.write("\n--------------------------------------")
+    file.write(f'\nKhan: {khan_per}% ({khan_total})')
+    file.write(f'\nCorrey: {correy_per}% ({correy_total})')
+    file.write(f'\nLi: {li_per}% ({li_total})')
+    file.write(f"\nO'Tooley:{tooley_per}% ({tooley_total})")
+    file.write("\n--------------------------------------")
+    file.write(f'\nwinner: {b[0][0]}')
+    file.write("\n--------------------------------------")
