@@ -37,21 +37,23 @@ zip_file = dict(zip(change_profit_loss, date))
 month_max_profit = zip_file[max_profit]
 month_min_profit = zip_file[min_profit]
 
-print(total_months)
-print(total_amount)
-print(avg_profit_loss)
-print(max_profit)
-print(min_profit)
-print(month_max_profit)
-print(month_min_profit)
-print(type(change_profit_loss))
+print(("Financial Analysis"))
+print("--------------------------------------")
+print(f'Total Months: {total_months}')
+print(f'Total: ${total_amount}')
+print(f'Average Change: ${avg_profit_loss:.2f}')
+print(f'Greatest Increase in Profits: {month_max_profit} (${max_profit})')
+print(f'Greatest Decrease in Profits: {month_min_profit} (${min_profit})')
+
 
 output_file = os.path.join("analysis", "pybank.csv")
 with open(output_file, "w", newline='')as file:
     file.write("Financial Analysis")
     file.write("\n--------------------------------------")
-    file.write(f'\n{total_months}')
-    file.write(f'\n{total_amount}')
-    file.write(f'\n{avg_profit_loss}')
-    file.write(f'\n{month_max_profit}, {max_profit}')
-    file.write(f'\n{month_min_profit}, {min_profit}')
+    file.write(f'\nTotal Months: {total_months}')
+    file.write(f'\nTotal: ${total_amount}')
+    file.write(f'\nAverage Change: ${avg_profit_loss:.2f}')
+    file.write(
+        f'\nGreatest Increase in Profits: {month_max_profit} (${max_profit})')
+    file.write(
+        f'\nGreatest Decrease in Profits: {month_min_profit} (${min_profit})')
