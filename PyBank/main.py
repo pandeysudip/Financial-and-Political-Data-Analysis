@@ -31,9 +31,17 @@ avg_profit_loss = (sum(change_profit_loss))/len(change_profit_loss)
 max_profit = max(change_profit_loss)
 min_profit = min(change_profit_loss)
 
+#change_profit_loss = change_profit_loss.insert(0, 1)
+zip_file = dict(zip(change_profit_loss, date))
+
+month_max_profit = zip_file[max_profit]
+month_min_profit = zip_file[min_profit]
 
 print(total_months)
 print(total_amount)
 print(avg_profit_loss)
 print(max_profit)
 print(min_profit)
+print(month_max_profit)
+print(month_min_profit)
+print(type(change_profit_loss))
