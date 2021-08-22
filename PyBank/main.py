@@ -31,7 +31,7 @@ avg_profit_loss = (sum(change_profit_loss))/len(change_profit_loss)
 max_profit = max(change_profit_loss)
 min_profit = min(change_profit_loss)
 
-#change_profit_loss = change_profit_loss.insert(0, 1)
+change_profit_loss = [21588]+change_profit_loss
 zip_file = dict(zip(change_profit_loss, date))
 
 month_max_profit = zip_file[max_profit]
@@ -45,3 +45,13 @@ print(min_profit)
 print(month_max_profit)
 print(month_min_profit)
 print(type(change_profit_loss))
+
+output_file = os.path.join("analysis", "pybank.csv")
+with open(output_file, "w", newline='')as file:
+    file.write("Financial Analysis")
+    file.write("\n--------------------------------------")
+    file.write(f'\n{total_months}')
+    file.write(f'\n{total_amount}')
+    file.write(f'\n{avg_profit_loss}')
+    file.write(f'\n{month_max_profit}, {max_profit}')
+    file.write(f'\n{month_min_profit}, {min_profit}')

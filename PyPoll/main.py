@@ -83,3 +83,11 @@ print(li_total)
 print(li_per)
 print(tooley_total)
 print(tooley_per)
+
+
+output_file = os.path.join("analysis", "pypoll.csv")
+with open(output_file, "w", newline='')as file:
+    writer = csv.writer(file)
+    writer.writerow(["title", "price", "subscriber_count",
+                     "number_of_reviews", "course_length"])
+    writer.writerows(cleaned_csv)
