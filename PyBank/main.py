@@ -50,11 +50,11 @@ change_profit_loss = [21588]+change_profit_loss
 # Using zip to create dictionary so that we can easily get date
 zip_file = dict(zip(change_profit_loss, date))
 
-# using dictionary to calculate month
+# Using dictionary to calculate month
 month_max_profit = zip_file[max_profit]
 month_min_profit = zip_file[min_profit]
 
-# printing results
+# Printing results
 print(("Financial Analysis"))
 print("--------------------------------------")
 print(f'Total Months: {total_months}')
