@@ -4,8 +4,9 @@
 Using the python scripting skills to complete the **two** Python Challenges, PyBank and PyPoll.
 
 ## Files
-![budget_data.csv](PyBank/Resources/budget_data.csv)
-![election_data.csv](PyPoll/Resources/election_data.csv)
+[budget_data.csv](PyBank/Resources/budget_data.csv)
+
+[election_data.csv](PyPoll/Resources/election_data.csv)
 
 ## Following steps were followed for this study:
 
