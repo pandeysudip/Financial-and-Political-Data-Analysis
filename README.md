@@ -4,8 +4,8 @@
 Using the python scripting skills to complete the **two** Python Challenges, PyBank and PyPoll.
 
 ## Files
-[budget_data.csv](PyBank/Resources/budget_data.csv)
-[election_data.csv](PyPoll/Resources/election_data.csv)
+![budget_data.csv](PyBank/Resources/budget_data.csv)
+![election_data.csv](PyPoll/Resources/election_data.csv)
 
 ## Following steps were followed for this study:
 
@@ -13,7 +13,7 @@ Using the python scripting skills to complete the **two** Python Challenges, PyB
 
 ![Revenue](Images/revenue-per-lead.png)
 
-* Creating a Python script for analyzing the financial records  that analyzes the records to calculate each of the following:
+* Creating a Python script for analyzing the financial records that analyzes the records to calculate each of the following:
 
   * The total number of months included in the dataset
 
