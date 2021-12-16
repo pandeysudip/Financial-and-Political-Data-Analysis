@@ -1,7 +1,7 @@
 # python-challenge
 
 ## Background
-Using the python scripting skills to complete the **two** Python Challenges, PyBank and PyPoll.
+Using python  to complete the **two** Python Challenges, PyBank and PyPoll.
 
 ## Files
 [budget_data.csv](PyBank/Resources/budget_data.csv)
