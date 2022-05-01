@@ -1,4 +1,5 @@
-# python-challenge
+# Financial-and-Political-Data-Analysis
+
 
 ## Background
 Using python  to complete the **two** Python Challenges, PyBank and PyPoll.
